@@ -61,4 +61,4 @@ def get_info(mail_server,new_sheet_instance,timer,limit,from_email,to_email,json
             start_time = end_time
             if int(sgp30.eCO2) >= int(limit):
                 print('hello')
-                send_message(mail_server,from_email,to_email,"\nALERT : CO2 LEVEL HAS RISEN. Currently is at {} ppm.".format(sgp30.eCO2))
+                send_message(mail_server,from_email,to_email,"\nSUBJECT : CO2 LEVEL NOTIFICATION. Currently is at {} ppm.".format(sgp30.eCO2))
