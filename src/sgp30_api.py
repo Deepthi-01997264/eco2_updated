@@ -38,7 +38,6 @@ def get_info(mail_server,new_sheet_instance,timer,limit,from_email,to_email,json
         json_dict = {"eco2":baseline_eCO2,"tvoc":baseline_TVOC}
     with open(os.path.join(os.path.dirname(__file__),"baseline_values.json"), 'w') as fp:
         json.dump(json_dict, fp)
-    sgp30.set_iaq_relative_humidity(celcius=22.1, relative_humidity=44)
     elapsed_sec = 0
     start_time = datetime.now()
     while True:
